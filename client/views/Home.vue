@@ -1,26 +1,26 @@
 <template>
   <div class="page">
      <Canvas>
-                
+              
+     
+
  
      </Canvas>
-
-      <fabricRect v-bind:top="100" v-bind:left="100"  v-bind:fill="'red'" v-bind:height="100" v-bind:width="50" />
-
+ <Rectangle v-bind:top="100" v-bind:width="300" v-bind:left="100"  v-bind:fill="'red'" v-bind:height="100" />
   </div>
 </template>
 
-<script>
 
-import { fabric } from 'fabric'
-import Canvas from '../components/vueFabric/Canvas'
-import fabricRect from '../components/vueFabric/Rect'
+<script>
+import Canvas from '../components/vueFabric/Canvas';
+import { Rectangle } from '../components/vueFabric/';
 export default {
   components: {
     Counter,
     Canvas,
-    fabricRect
+    Rectangle
   },
- 
-}
+
+  mounted: function() {}
+};
 </script>
