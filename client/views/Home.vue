@@ -1,12 +1,9 @@
 <template>
   <div class="page">
      <Canvas>
-              
-     
-
- 
+          
      </Canvas>
- <Rectangle v-bind:top="100" v-bind:width="300" v-bind:left="100"  v-bind:fill="'red'" v-bind:height="100" />
+<Rectangle v-bind:top="100" v-bind:width="10" v-bind:left="100"  v-bind:fill="'red'" v-bind:height="10" />
   </div>
 </template>
 
