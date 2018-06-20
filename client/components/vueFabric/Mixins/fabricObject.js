@@ -1,3 +1,5 @@
+import Vue from 'Vue'
+
 export default {
   props: {
     angle: {
@@ -272,5 +274,6 @@ export default {
       type: Number,
       default: 100
     }
-  }
+  },
+
 };

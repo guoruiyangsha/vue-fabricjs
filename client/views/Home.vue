@@ -1,9 +1,12 @@
 <template>
   <div class="page">
      <Canvas>
-          
-     </Canvas>
+    
+        <Rectangle v-bind:top="100" v-bind:width="10" v-bind:left="100"  v-bind:fill="'red'" v-bind:height="10" />
 <Rectangle v-bind:top="100" v-bind:width="10" v-bind:left="100"  v-bind:fill="'red'" v-bind:height="10" />
+     </Canvas>
+    
+ 
   </div>
 </template>
 
@@ -18,6 +21,8 @@ export default {
     Rectangle
   },
 
-  mounted: function() {}
+  mounted: function() {
+       
+  }
 };
 </script>

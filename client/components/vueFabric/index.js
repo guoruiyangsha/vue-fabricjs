@@ -1,3 +1,3 @@
-import Rectangle from './Shapes/Rectangle.js';
+import Rectangle from './Shapes/Rectangle'
 
-export { Rectangle };
+export { Rectangle }

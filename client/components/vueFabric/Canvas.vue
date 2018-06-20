@@ -1,24 +1,34 @@
     <template>
-    <div>
-        <canvas id='element'>
-              <slot></slot>
-        </canvas>
- 
-           </div>   
+        
+    <canvas :id="this.canvasId" >
+        
+          <slot></slot>
+    </canvas>
     </template>
-
-
-
+    
+    
     <script>
+    import uuid from './helpers/uuid.js';
+
     export default {
         name: 'Canvas',
+        data: function(){
+            return{
+                canvasId: uuid(),
+                vueFabric: true
+            }
+        },
+        create: function(){
+    
+        },
         mounted: function(){
-              this.$vueFabric.initCanvas()
+
            
         },
         beforeUpdate: function(){
             this.$vueFabric.fabricInstance.renderAll();
-        }
+        },
+
     }
     </script>
 
