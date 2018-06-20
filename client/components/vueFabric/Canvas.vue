@@ -1,9 +1,10 @@
     <template>
         
-    <canvas :id="this.canvasId" >
+    <canvas v-bind:id="cid" >
         
           <slot></slot>
     </canvas>
+
     </template>
     
     
@@ -12,23 +13,12 @@
 
     export default {
         name: 'Canvas',
+        props: ['height, width'],
         data: function(){
             return{
-                canvasId: uuid(),
-                vueFabric: true
+                cid: uuid()
             }
-        },
-        create: function(){
-    
-        },
-        mounted: function(){
-
-           
-        },
-        beforeUpdate: function(){
-            this.$vueFabric.fabricInstance.renderAll();
-        },
-
+        }
     }
     </script>
 

@@ -194,7 +194,7 @@ export default {
     },
     scaleX: {
       value: this.scaleX,
-      type: Number,
+    
       default: 1
     },
     scaleY: {
@@ -274,6 +274,6 @@ export default {
       type: Number,
       default: 100
     }
-  },
+  }
 
-};
+}

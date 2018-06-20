@@ -21,7 +21,7 @@ const vueFabric = {
     Vue.prototype.$vueFabric = {
       fabricInstance: fabric,
       canvasStore: [],
-      getCanvasByID (id) {
+      getCanvasByID: (id) => {
         return new Promise((resolve, reject) => {
           const a = Vue.canvasStore.filter(item => {
             return item.cid === id
