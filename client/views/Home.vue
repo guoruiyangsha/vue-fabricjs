@@ -1,7 +1,8 @@
 <template>
   <div class="page">
      <Canvas v-bind:width="300" v-bind:height="500">
-        <Rectangle v-bind:left="100"  v-bind:fill="'red'" v-bind:height="10" />
+        <fabricCircle :width="100" :height="100"/>
+
      </Canvas>
   </div>
 </template>
@@ -9,17 +10,10 @@
 
 <script>
 import Canvas from '../components/vueFabric/Canvas';
-import { Rectangle } from '../components/vueFabric/';
+import { fabricRectangle, fabricCircle } from '../components/vueFabric/';
 export default {
-  data: function(){
-    return{
-      range: 20
-    }
-  },
   components: {
-    Counter,
-    Canvas,
-    Rectangle
+    fabricCircle, fabricRectangle, Canvas
   },
 };
 </script>

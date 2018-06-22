@@ -274,6 +274,19 @@ export default {
       type: Number,
       default: 100
     }
-  }
-
+  },
+  data: function () {
+    return {
+      canvas: this.$vueFabric.canvasStore
+    }
+  },
+    watch: {
+    "canvas": {
+      handler: function(val){ 
+          this.$vueFabric.getCanvasByID(this.$parent.$el.id).then( canvas => {
+            canvas.add(this.shape)
+          })
+      }
+    },
+  },
 }

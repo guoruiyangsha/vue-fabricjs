@@ -18,6 +18,9 @@
             return{
                 cid: uuid()
             }
+        },
+        mounted: function() {
+             this.$vueFabric.createCanvasInstance(this.cid)
         }
     }
     </script>
