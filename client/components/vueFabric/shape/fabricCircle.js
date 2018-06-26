@@ -1,8 +1,8 @@
 import Vue from 'vue';
-import fabricObject from '../Mixins/fabricObject'
+import baseObject from '../base/baseObject'
 
 export default Vue.component('fabricCircle', {
-  mixins: [fabricObject],
+  mixins: [baseObject],
   props: {
     endAngle: {
       value: this.endAngle,

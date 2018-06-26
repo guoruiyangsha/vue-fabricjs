@@ -9,14 +9,14 @@
     
     
     <script>
-    import uuid from './helpers/uuid.js';
+    import { randomID } from './utils.js';
 
     export default {
         name: 'Canvas',
         props: ['height, width'],
         data: function(){
             return{
-                cid: uuid()
+                cid: guid()
             }
         },
         mounted: function() {

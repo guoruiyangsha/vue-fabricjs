@@ -1,5 +1,3 @@
-import Vue from 'Vue'
-
 export default {
   props: {
     angle: {
@@ -281,7 +279,7 @@ export default {
     }
   },
     watch: {
-    "canvas": {
+    'canvas': {
       handler: function(val){ 
           this.$vueFabric.getCanvasByID(this.$parent.$el.id).then( canvas => {
             canvas.add(this.shape)
