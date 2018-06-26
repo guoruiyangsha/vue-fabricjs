@@ -9,11 +9,12 @@
 
 
 <script>
-import Canvas from '../components/vueFabric/Canvas';
-import { fabricRectangle, fabricCircle } from '../components/vueFabric/';
+
+import {  Canvas, fabricCircle } from '../../vue-fabricjs'
 export default {
   components: {
-    fabricCircle, fabricRectangle, Canvas
+    Canvas,
+    fabricCircle
   },
 };
 </script>

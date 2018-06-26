@@ -16,7 +16,7 @@
         props: ['height, width'],
         data: function(){
             return{
-                cid: guid()
+                cid: randomID()
             }
         },
         mounted: function() {
